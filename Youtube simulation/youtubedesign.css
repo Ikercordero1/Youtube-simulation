@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(27, 25, 25);
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.cabeza {
+  background-color: rgb(27, 25, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.cabecilla {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.cabecilla img {
+  display: flex;
+  width: 40px;
+  height: auto;
+}
+
+.cabecilla h1 {
+  display: flex;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.busqueda input {
+  width: 40vw;
+  margin: 10px;
+  min-width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(46, 44, 44);
+  color: white;
+  padding: 0 0.7rem;
+  box-shadow: 1px 1px 2px color rgb(10, 10, 10);
+}
+
+.esquinaderecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+}
+
+.foticop {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+.listica0 {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.listica0:hover {
+  background-color: rgb(204, 197, 197);
+  color: rgb(15, 15, 15);
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+aside {
+  background-color: rgb(27, 25, 25);
+  width: 180px;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.listica {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  gap: 0.3rem;
+}
+
+svg {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+  gap: 0.2rem;
+}
+.descargasf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+.descargasf:hover {
+  background-color: rgb(33, 33, 34);
+  transition: transform 0.3s ease;
+}
+
+.bloques {
+  background-color: rgb(27, 25, 25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem;
+  margin-left: 180px;
+}
+
+.bloquecitos {
+  background-color: rgb(49, 48, 48);
+  color: rgb(238, 229, 229);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bloquecitos:hover {
+  background-color: rgb(236, 240, 240);
+  color: black;
+}
+
+main {
+  margin-left: 200px;
+  padding: 1.5rem;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.contenedorvid {
+  background-color: rgb(46, 44, 44);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contenedorvid:hover {
+  background-color: rgb(33, 33, 34);
+}
+
+.imgvideo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tituulo {
+  font-size: 0.9rem;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.miniatura {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 0.3rem;
+}
+
+p {
+  color: rgb(148, 147, 147);
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  font-size: 15px;
+}
+
+/* ====== RESPONSIVE====== */
+
+@media (max-width: 768px) {
+  aside {
+    transform: translateX(-100%);
+  }
+
+  aside.active {
+    transform: translateX(0);
+  }
+
+  #menu-toggle {
+    display: flex;
+  }
+
+  .bloques,
+  main {
+    margin-left: 0;
+  }
+
+  .busqueda {
+    width: 80%;
+  }
+
+  .barraizq {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecilla h1 {
+    font-size: 1rem;
+  }
+
+  .esquinaderecha {
+    display: flex;
+  }
+
+  .cabeza {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 0.7rem;
+  }
+
+  .foticop {
+    width: 40px;
+    height: 40px;
+  }
+  .listica0 {
+    font-size: 0.9rem;
+  }
+
+  .bloquecitos {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
