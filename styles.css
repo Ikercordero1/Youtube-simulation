@@ -285,7 +285,7 @@ p {
   }
 
   .listica0 {
-    text-decoration: none;
+    display: none;
   }
 
   #menu-toggle {
