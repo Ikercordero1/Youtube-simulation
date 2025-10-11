@@ -285,8 +285,11 @@ p {
   }
 
   .listica0 {
-    display: none;
+    display: flex;
   }
+  .listica0:hover {
+    display:none
+    }
 
   #menu-toggle {
     display: flex;
