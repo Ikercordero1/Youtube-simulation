@@ -105,12 +105,13 @@ body {
 
 aside {
   background-color: rgb(228, 13, 13);
-  width: auto;
+  width: 200px;
   padding-top: 1rem;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
-  height: auto;
+  height: 100vh;
+  white-space: nowrap;
   margin: 0;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -119,7 +120,6 @@ aside {
 aside nav {
   display: flex;
   flex-direction: column;
-  height: 150vh;
 }
 
 .texto_contenedor_izquierdo {
@@ -133,9 +133,9 @@ aside nav {
 
 .contenedores_barra_izquierda {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
 }
 
 .titulo_sidebar {
@@ -182,7 +182,6 @@ aside nav {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.2rem;
-  margin-left: 100px;
   width: 100%;
   overflow-x: auto;
 }
@@ -205,6 +204,8 @@ aside nav {
 }
 
 main {
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 200px;
   padding: 1.5rem;
 }
