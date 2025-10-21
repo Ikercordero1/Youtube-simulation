@@ -1,150 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube</title>
     <link rel="stylesheet" href="./styles.css" />
+    <title>Youtube</title>
   </head>
   <body>
     <header class="encabezado">
-      <div class="logo_y_titulo_youtube">
+      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <div class="header_derecho">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
-          alt="YouTube Logo"
+          alt="Logo_youtube"
         />
-        <h1>YOUTUBE</h1>
+        <h1>Youtube</h1>
       </div>
 
-      <div class="busqueda">
-        <input type="text" placeholder="Buscar..." />
+      <div class="header_central">
+        <input class="busqueda" type="search" placeholder="Buscar" />
       </div>
 
-      <nav class="iconos_esquina_derecha">
-        <a class="iconos_header" href="#">+</a>
-        <div class="fotos">
+      <div class="header_izquierdo">
+        <p>Crear</p>
+
+        <div class="Imagenes">
           <img src="./Imagenes/bell.svg" />
         </div>
 
-        <div class="fotos">
-          <img
-            class="fotico_perfil"
-            src="./Imagenes/IMG_8496.jpeg"
-            alt="perfil"
-          />
+        <div class="icono_perfil">
+          <img class="perfil" src="./Imagenes/IMG_8496.jpeg" />
         </div>
-      </nav>
-
-      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
     </header>
 
-    <aside id="sidebar">
-      <nav class="barra_lateral_izquierda">
-        <div class="contenedores_barra_izquierda">
-          <img src="./Imagenes/home.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Home</a>
-        </div>
+    <aside class="sidebar">
+      <div class="sidebar_top">
+        <a href="#"
+          ><img src="./Imagenes/home.svg" />
+          <p>Home</p></a
+        >
+        <a href="#"
+          ><img src="./Imagenes/download.svg" />
+          <p>Downloads</p></a
+        >
+        <a href="#"
+          ><img src="./Imagenes/shorts.svg" />
+          <p>Shorts</p></a
+        >
+        <a href="#"
+          ><img src="./Imagenes/liked.svg" />
+          <p>Liked</p></a
+        >
+      </div>
 
-        <div class="contenedores_barra_izquierda">
-          <img src="./Imagenes/shorts.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Shorts</a>
-        </div>
+      <div class="sidebar_center">
+        <h3>Your</h3>
+        <a href="#"
+          ><img src="./Imagenes/playlist.svg" />
+          <p>Playlist</p></a
+        >
+        <a href="#"
+          ><img src="./Imagenes/history.svg" />
+          <p>history</p></a
+        >
+        <a href="#"
+          ><img src="./Imagenes/you.svg" />
+          <p>You</p></a
+        >
+      </div>
 
-        <div class="contenedores_barra_izquierda">
-          <img src="./Imagenes/suscrip.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Premium</a>
-        </div>
+      <div class="sidebar_bottom">
+        <h3>Suscriptions</h3>
 
-        <div class="contenedores_barra_izquierda">
-          <img src="./Imagenes/you.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Profile</a>
-        </div>
-
-        <div class="contenedores_barra_izquierda">
-          <img src="./Imagenes/download.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Downloads</a>
-        </div>
-        <p class="titulo_sidebar">Your</p>
-        <div class="contenedores_barra_izquierda_2">
-          <img src="./Imagenes/history.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">History</a>
-        </div>
-
-        <div class="contenedores_barra_izquierda_2">
-          <img src="./Imagenes/playlist.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Playlist</a>
-        </div>
-
-        <div class="contenedores_barra_izquierda_2">
-          <img src="./Imagenes/liked.svg" />
-          <a class="texto_contenedor_izquierdo" href="#">Liked</a>
-        </div>
-
-        <p class="titulo_sidebar">Suscriptions</p>
-
-        <div class="contenedores_barra_izquierda_2">
-          <img
-            class="img_suscriptions"
+        <a href="#"
+          ><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTea8W1UfR9jI7R8TRO94tz3tODu7KPopNGuA&s"
             alt="Grefg_img"
           />
-          <a class="texto_contenedor_izquierdo" href="#">TheGrefg</a>
-        </div>
-        <div class="contenedores_barra_izquierda_2">
-          <img
-            class="img_suscriptions"
+          <p>Grefg</p></a
+        >
+
+        <a href="#"
+          ><img
             src="https://yt3.googleusercontent.com/ytc/AIdro_k94J7kkxpmlJe3c2iDFJpHk8SAADPpf49cN7XjomXSzEE=s900-c-k-c0x00ffffff-no-rj"
             alt="logo_red_bull"
           />
-          <a class="texto_contenedor_izquierdo" href="#">Redbull</a>
-        </div>
+          <p>Red Bull</p></a
+        >
 
-        <div class="contenedores_barra_izquierda_2">
-          <img
-            class="img_suscriptions"
+        <a href="#"
+          ><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIaCPlT78vNEM1MbKcLr-wIT1p4USvVMvPw&s"
             alt="sony_logo"
           />
-          <a class="texto_contenedor_izquierdo" href="#">Sony</a>
-        </div>
-      </nav>
+          <p>Sony</p></a
+        >
+      </div>
     </aside>
+    <main>
+      <div class="container_two">
+        <section class="subheader">
+          <a href="#">Themes</a>
+          <a href="#">Dark ambient</a>
+          <a href="#">Copa del mundo</a>
+          <a href="#">Messi</a>
+          <a href="#">Speed</a>
+          <a href="#">Music</a>
+          <a href="#">News</a>
+          <a href="#">Development</a>
+          <a href="#">Trailer 4k</a>
+          <a href="#">Read Dead Redemption 2</a>
+          <a href="#">Kai cenat</a>
+          <a href="#">Peliculas</a>
+          <a href="#">Mbappe</a>
+        </section>
+      </div>
 
-    <nav class="subheader">
-      <div class="subheader_section">Themes</div>
-      <div class="subheader_section">Música</div>
-      <div class="subheader_section">Mixes</div>
-      <div class="subheader_section">Videojuegos</div>
-      <div class="subheader_section">Dark Ambient</div>
-      <div class="subheader_section">Live</div>
-      <div class="subheader_section">Deportes</div>
-      <div class="subheader_section">Series</div>
-      <div class="subheader_section">Craft</div>
-      <div class="subheader_section">Anime</div>
-      <div class="subheader_section">Kendrick Lamar</div>
-      <div class="subheader_section">Kendrick Lamar</div>
-      <div class="subheader_section">Bad Bunny</div>
-      <div class="subheader_section">Viva Concert</div>
-      <div class="subheader_section">Taiwan 4k</div>
-      <div class="subheader_section">Fútbol</div>
-      <div class="subheader_section">Copa del mundo</div>
-    </nav>
-
-    <main class="videos">
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/03/death-note.jpg?tf=1200x"
-          alt="death-note"
-        />
-        <div class="perfil">
+      <section class="cajon">
+        <div class="contenedor_vid">
           <img
-            class="miniatura"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLiTQtOPvCWW1EN2DxuTvzVizOgfyX3NXDQ&s"
-            alt="perfil-1"
+            class="img_video"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/03/death-note.jpg?tf=1200x"
+            alt="death-note"
           />
-
-          <div class="parrafo">
+          <div class="titulo_e_imagen">
+            <img
+              class="miniatura"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLiTQtOPvCWW1EN2DxuTvzVizOgfyX3NXDQ&s"
+              alt="perfil-1"
+            />
             <h3 classs="tituulo">
               Light Yagami y la condena de la "death note"ANÁLISIS DN
             </h3>
@@ -152,120 +138,68 @@
             <p class="texto">86k vistas. Hace 1 semana</p>
           </div>
         </div>
-      </div>
 
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2025/09/Demon-Slayer-Castillo-infinito-Parte-2.jpg?resize=1200%2C675&quality=70&strip=all&ssl=1"
-          alt="kny"
-        />
-        <div class="perfil">
+        <div class="contenedor_vid">
           <img
-            class="miniatura"
-            src="https://cdnb.artstation.com/p/assets/images/images/020/390/355/large/camila-fernandes-img-20190904-082508.jpg?1567596633"
-            alt="perfil-1"
+            class="img_video"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/03/death-note.jpg?tf=1200x"
+            alt="death-note"
           />
-
-          <div class="parrafo">
-            <h3 classs="tituulo">LA MEJOR PELÍCULA DEL 2025 | DEMON SLAYER</h3>
-            <p class="texto">Series de moda</p>
-            <p class="texto">2.3M de vistas. Hace 3 semanas</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://cadenaser.com/resizer/v2/FEJDWIVAY5HFTKIOGJ3QGWJBVY.jpg?auth=509461059c6daa4ca96d54d8c5e9d42b64bb323786d76b5749be6cc71f48cda2"
-          alt="Barca"
-        />
-        <div class="perfil">
-          <img
-            class="miniatura"
-            src="https://i.pinimg.com/736x/e5/22/20/e522209afed1c1324010dd8a6f3a3101.jpg"
-            alt="perfil-1"
-          />
-          <div class="parrafo">
-            <h3 classs="tituulo">LAMINE YAMAL MARCA DOBLETE</h3>
-            <p class="texto">ESPN deportes</p>
-            <p class="texto">3M de vistas. Hace 1 Mes</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://los40.com/resizer/v2/C7QD3K5AXJFPDLDYU2NCCW2AP4.jpg?auth=1f8169021b4b3c5d4b77ac346bff085adf2a4b36224c12c5a09fd14be6eeb6d7&quality=70&width=1200&height=544&focal=1505,1645"
-          alt="data"
-        />
-        <div class="perfil">
-          <img
-            class="miniatura"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYDHvP0AA4TTwvvxzsElaw-ybltV_85bWKQ&s"
-            alt="perfil-1"
-          />
-          <div class="parrafo">
-            <h3 classs="tituulo">FANTASMAS| TAINY</h3>
-            <p class="texto">Tainy</p>
-            <p class="texto">10 M de vistas. Hace 6 Meses</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://i.ytimg.com/vi/StxPHD_7Mzc/maxresdefault.jpg"
-          alt="project"
-        />
-        <div class="perfil">
-          <img
-            class="miniatura"
-            src="https://cdn-images.dzcdn.net/images/talk/a3c0ad2027fc6c5a24c531a57cfc3e09/500x500-000000-80-0-0.jpg"
-            alt="perfil-1"
-          />
-
-          <div class="parrafo">
+          <div class="titulo_e_imagen">
+            <img
+              class="miniatura"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLiTQtOPvCWW1EN2DxuTvzVizOgfyX3NXDQ&s"
+              alt="perfil-1"
+            />
             <h3 classs="tituulo">
-              THE WILD PROJECT: XOKAS EN VIVO ¿Depresión?¿Fama?
+              Light Yagami y la condena de la "death note"ANÁLISIS DN
             </h3>
-            <p class="texto">The Wild Project</p>
-            <p class="texto">5M de vistas. Hace 2 años</p>
+            <p class="texto">Physco rincón</p>
+            <p class="texto">86k vistas. Hace 1 semana</p>
           </div>
         </div>
-      </div>
 
-      <div class="contenedor_vid">
-        <img
-          class="img_video"
-          src="https://ss-cnt-001c.esmsv.com/r/content/host1/6694ca21d703d2ce25aa9ce5fc6edeee/upload/posts/editor/pasosparaconstruirunaviviendaensantaferosarioestudiodearquitecturaconstrucciondirecciondeobraproyecto.webp"
-          alt="arquitectura"
-        />
-        <div class="perfil">
+        <div class="contenedor_vid">
           <img
-            class="miniatura"
-            src="https://images.adsttc.com/media/images/6231/bc3f/3e4b/314e/8200/0047/medium_jpg/3.1.%C2%A9Archiland_International.jpg?1647426617"
-            alt="perfil-1"
+            class="img_video"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/03/death-note.jpg?tf=1200x"
+            alt="death-note"
           />
-
-          <div class="parrafo">
-            <h3 classs="tituulo">从零开始的建筑北京，世界上最坚固的建筑</h3>
-            <p class="texto">Beijing Structure</p>
-            <p class="texto">27M de vistas. Hace 1 año</p>
+          <div class="titulo_e_imagen">
+            <img
+              class="miniatura"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLiTQtOPvCWW1EN2DxuTvzVizOgfyX3NXDQ&s"
+              alt="perfil-1"
+            />
+            <h3 classs="tituulo">
+              Light Yagami y la condena de la "death note"ANÁLISIS DN
+            </h3>
+            <p class="texto">Physco rincón</p>
+            <p class="texto">86k vistas. Hace 1 semana</p>
           </div>
         </div>
-      </div>
-    </main>
-    <script>
-      const menuBtn = document.getElementById("menu-toggle");
-      const sidebar = document.getElementById("sidebar");
 
-      menuBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("active");
-      });
-    </script>
+        <div class="contenedor_vid">
+          <img
+            class="img_video"
+            src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/03/death-note.jpg?tf=1200x"
+            alt="death-note"
+          />
+          <div class="titulo_e_imagen">
+            <img
+              class="miniatura"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLiTQtOPvCWW1EN2DxuTvzVizOgfyX3NXDQ&s"
+              alt="perfil-1"
+            />
+            <h3 classs="tituulo">
+              Light Yagami y la condena de la "death note"ANÁLISIS DN
+            </h3>
+            <p class="texto">Physco rincón</p>
+            <p class="texto">86k vistas. Hace 1 semana</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
+
